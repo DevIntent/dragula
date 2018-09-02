@@ -3,7 +3,7 @@
 var emitter = require('contra/emitter');
 var crossvent = require('crossvent');
 var classes = require('./classes');
-var doc = document;
+var doc = 'undefined' !== typeof document ? document : {};
 var documentElement = doc.documentElement;
 
 function dragula (initialContainers, options) {
